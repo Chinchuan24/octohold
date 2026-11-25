@@ -92,6 +92,7 @@ One file per dump: `~/brain-dumps/YYYY-MM-DD-HHMM.md`, unless the person names a
 - Write it at mirror time, headed `Status: NOT CONFIRMED`. After the ✅, flip it to CONFIRMED and add the plan. For each decision, add what information would help decide.
 - Update it when an item is done, dropped, waiting or corrected.
 - Say "Saved" only after the write worked. If it failed, say so in one line and carry on in chat.
+- **No file access** (a chat app like ChatGPT, Grok or Gemini)? Skip saving and don't mention files. When they're done, offer a short copy-paste summary instead.
 
 ## Drafting for them
 

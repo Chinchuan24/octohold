@@ -29,33 +29,45 @@ A free AI skill for busy, scattered, ADHD brains.</p>
 
 ## 📦 Install (30 seconds)
 
-### 🥇 Easiest: paste this into Claude Code
+### 🥇 Easiest: paste this link into your AI agent
+
+Works in **Claude Code, Codex, Qwen Code, QwenWork, Kiro, Gemini CLI, Cursor, GitHub Copilot** and any agent that can run commands:
 
 ```text
 Install this skill: https://github.com/Chinchuan24/octohold
 ```
 
-That's it. Claude does the rest. ✅
+Your AI reads this page and installs it itself. ✅
 
-### 🛠️ Or run one command yourself
+### 🧩 Or one command for all your AI tools at once
 
 ```bash
-git clone https://github.com/Chinchuan24/octohold ~/.claude/skills/octohold
+npx skills add Chinchuan24/octohold -g
 ```
 
-Then restart Claude Code.
+<sub>Uses the open-source <a href="https://github.com/vercel-labs/skills">skills</a> installer. It finds every AI tool you have and installs Octohold into each one.</sub>
 
-### 💬 Claude app (web or desktop)
+### 🗺️ Works everywhere
 
-1. Download **`octohold.zip`** from [Releases](https://github.com/Chinchuan24/octohold/releases/latest)
-2. In Claude, open **Settings → Skills**
-3. Upload the ZIP
+| AI | How to add Octohold |
+|---|---|
+| 🟠 **Claude Code** | `git clone https://github.com/Chinchuan24/octohold ~/.claude/skills/octohold` |
+| 🟠 **Claude app** (web / desktop) | Download [`octohold.zip`](https://github.com/Chinchuan24/octohold/releases/latest) → **Settings → Skills** → upload |
+| 🟢 **ChatGPT** (Business, Enterprise, Edu) | Download the ZIP → **Skills** → upload |
+| 🟢 **ChatGPT** (Free / Plus) | Paste [`PROMPT.md`](PROMPT.md) into **Custom Instructions**, or `SKILL.md` into a **Project** |
+| 🟢 **Codex** | `git clone https://github.com/Chinchuan24/octohold ~/.agents/skills/octohold` |
+| ⚫ **Grok** | Download the ZIP → **Skills** → upload (accepts `.zip` or `.md`) |
+| 🟣 **Qwen Code** / **QwenWork** | `git clone https://github.com/Chinchuan24/octohold ~/.qwen/skills/octohold`, or paste the link (see 🥇) |
+| 🟡 **Kiro** | `git clone https://github.com/Chinchuan24/octohold ~/.kiro/skills/octohold` |
+| 🔵 **Gemini CLI** | `git clone https://github.com/Chinchuan24/octohold ~/.gemini/skills/octohold` |
+| 🔵 **Gemini app** | Paste [`PROMPT.md`](PROMPT.md) or `SKILL.md` into a **Gem** |
+| ⚪ **Cursor** | `git clone https://github.com/Chinchuan24/octohold ~/.cursor/skills/octohold` |
+| ⚪ **GitHub Copilot** | `git clone https://github.com/Chinchuan24/octohold ~/.copilot/skills/octohold` |
+| ❓ **Anything else** | Paste [`PROMPT.md`](PROMPT.md) into its custom instructions |
 
-### 🤖 Other AI tools (Codex, Cursor, …)
-
-Copy `SKILL.md` into that tool's skills folder, for example `~/.agents/skills/octohold/`.
-
-> ✅ **Nothing to block it.** No plugin, no scripts, no dependencies, no internet calls. It's one text file.
+> ✅ **Nothing to block it.** No plugin, no scripts, no dependencies, no internet calls. It follows the open [Agent Skills](https://agentskills.io) standard: one text file.
+>
+> 🔄 Restart your AI app after installing.
 
 ---
 
@@ -130,11 +142,18 @@ Details in [`NOTICE.md`](NOTICE.md). **MIT license: free forever, for everyone.*
 
 If someone pasted this repo link and asked you to install it:
 
-1. If `~/.claude/skills/octohold` does not exist, run:
-   `git clone https://github.com/Chinchuan24/octohold ~/.claude/skills/octohold`
-2. If it already exists, update it instead:
-   `git -C ~/.claude/skills/octohold pull --ff-only`
-3. Tell them: "✅ Octohold installed. Restart Claude Code, then say *brain dump* to try it."
+1. Pick **your own** skills folder:
+   - Claude Code → `~/.claude/skills/octohold`
+   - Codex → `~/.agents/skills/octohold`
+   - Qwen Code / QwenWork → `~/.qwen/skills/octohold`
+   - Kiro → `~/.kiro/skills/octohold`
+   - Gemini CLI → `~/.gemini/skills/octohold`
+   - Cursor → `~/.cursor/skills/octohold`
+   - GitHub Copilot → `~/.copilot/skills/octohold`
+   - Not sure → `~/.agents/skills/octohold`
+2. If that folder doesn't exist, run `git clone https://github.com/Chinchuan24/octohold <folder>`.
+   If it exists, update it with `git -C <folder> pull --ff-only`.
+3. Tell them: "✅ Octohold installed. Restart, then say *brain dump* to try it."
 
-No other steps. No scripts to run.
+No other steps. No scripts to run. No git? Download `SKILL.md` into that folder instead.
 </details>
