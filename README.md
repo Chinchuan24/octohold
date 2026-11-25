@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.png" alt="Octohold: a friendly octopus holding a sticky note, an envelope, a lightbulb and other loose thoughts, and handing you one card that says ONE STEP" width="100%">
+  <img src="assets/banner.gif" alt="Octohold: an animated friendly octopus holding a sticky note, an envelope, a lightbulb and other loose thoughts, and handing you one card that says ONE STEP" width="100%">
 </p>
 
 <h1 align="center">🐙 Octohold</h1>
